@@ -7,17 +7,17 @@ human-readable.
 
 ## Supported Filters
 
-angularjs-humanize currently supports the following features from
-humanize:
+angularjs-humanize currently supports the following filters, mapping
+to the humanize functions of the same name:
 
-+ _filesize_, which transforms a number or number-like string into
++ _humanizeFilesize_, which transforms a number or number-like string into
   a human-readable filesize such as "225.35 KB"
-+ _ordinal_, which transforms an integer into an ordinal such as
++ _humanizeOrdinal_, which transforms an integer into an ordinal such as
   "32nd" or "101st"
-+ _naturalDay_, which transforms an integer representing an epoch
++ _humanizeNaturalDay_, which transforms an integer representing an epoch
   into a date representation or one of "yesterday", "today", or
   "tomorrow"
-+ _relativeTime_, which transforms an integer representing an epoch
++ _humanizeRelativeTime_, which transforms an integer representing an epoch
   into a string such as "about an hour ago" or "in a month"
 
 ## License
