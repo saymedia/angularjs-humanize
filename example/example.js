@@ -3,7 +3,7 @@
      angular.module('example', ['ng', 'angular-humanize']).
         controller(
          'Example',
-         ['$scope', 'filesizeFilter',
+         ['$scope', 'humanizeFilesizeFilter',
          function ($scope, filesizeFilter) {
              $scope.data = [
                 {

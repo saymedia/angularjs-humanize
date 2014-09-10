@@ -22,8 +22,8 @@
     </tr>
     <tr ng-repeat="row in data">
         <td>{{row.name}}</td>
-        <td>{{row.filesize | filesize}}</td>
-        <td>{{row.uploaded | relativeTime}}</td>
+        <td>{{row.filesize | humanizeFilesize}}</td>
+        <td>{{row.uploaded | humanizeRelativeTime}}</td>
     </tr>
 </table>
 

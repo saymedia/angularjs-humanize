@@ -1,30 +1,30 @@
-(function( angular, humanize ) {
+(function( angular ) {
   'use strict';
 
   angular.module('angular-humanize', []).
-    filter('filesize', function () {
+    filter('humanizeFilesize', function () {
       return function ( input ) {
         if ( isNaN(parseInt(input)) ) { return input; }
         return humanize.filesize(parseInt(input));
       };
     }).
-    filter('ordinal', function () {
+    filter('humanizeOrdinal', function () {
       return function ( input ) {
         if ( parseInt(input) !== input ) { return input; }
         return humanize.ordinal(input);
       };
     }).
-    filter('naturalDay', function () {
+    filter('humanizeNaturalDay', function () {
       return function ( input ) {
         if ( parseInt(input) !== input ) { return input; }
         return humanize.naturalDay(input);
       };
     }).
-    filter('relativeTime', function () {
+    filter('humanizeRelativeTime', function () {
       return function ( input ) {
         if ( parseInt(input) !== input ) { return input; }
         return humanize.relativeTime(input);
       };
     });
 
-}( angular, window.humanize ));
+}( angular ));
