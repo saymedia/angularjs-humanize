@@ -3,8 +3,8 @@
      angular.module('example', ['ng', 'angular-humanize']).
         controller(
          'Example',
-         ['$scope', 'humanizeFilesizeFilter',
-         function ($scope, filesizeFilter) {
+         ['$scope',
+         function ($scope) {
              $scope.data = [
                 {
                     name: 'bruce_timm.png',
