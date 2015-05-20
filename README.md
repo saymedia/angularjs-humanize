@@ -5,6 +5,23 @@ angularjs-humanize is a thin wrapper around the
 variety of Angular filters which apply transformations to make data more
 human-readable.
 
+## Installation
+
+Install the library via 
+
+    bower install -S angularjs-humanize
+
+Add it to your `index.html`:
+
+    <script src="bower_components/humanize/humanize.js"></script>
+    <script src="bower_components/angularjs-humanize/src/angular-humanize.js"></script>
+
+Add it as a dependency to your angularjs project:
+
+    var app = angular.module("myApp", ['angular-humanize']);
+
+
+
 ## Supported Filters
 
 angularjs-humanize currently supports the following filters, mapping
