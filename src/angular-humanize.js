@@ -3,9 +3,11 @@
 
   angular.module('angular-humanize', []).
     filter('humanizeFilesize', function () {
-      return function ( input ) {
-        if ( isNaN(parseInt(input)) ) { return input; }
-        return humanize.filesize(parseInt(input));
+      return function () {
+        var args = Array.prototype.slice.call(arguments);
+        args[0] = parseInt(args[0])
+        if ( isNaN(args[0]) ) { return args[0]; }
+        return humanize.filesize.apply(null, args);
       };
     }).
     filter('humanizeOrdinal', function () {
