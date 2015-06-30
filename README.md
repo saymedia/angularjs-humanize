@@ -29,6 +29,8 @@ to the humanize functions of the same name:
 
 + _humanizeFilesize_, which transforms a number or number-like string into
   a human-readable filesize such as "225.35 KB"
++ _humanizeNumberFormat_, which transforms a number or number-like string into
+  a formatted number such as "1,225.35"
 + _humanizeOrdinal_, which transforms an integer into an ordinal such as
   "32nd" or "101st"
 + _humanizeNaturalDay_, which transforms an integer representing an epoch
