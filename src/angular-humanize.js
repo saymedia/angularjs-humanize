@@ -10,6 +10,14 @@
         return humanize.filesize.apply(null, args);
       };
     }).
+    filter('humanizeNumberFormat', function () {
+      return function () {
+        var args = Array.prototype.slice.call(arguments);
+        args[0] = parseInt(args[0])
+        if ( isNaN(args[0]) ) { return args[0]; }
+        return humanize.numberFormat.apply(null, args);
+      };
+    }).
     filter('humanizeOrdinal', function () {
       return function ( input ) {
         if ( parseInt(input) !== input ) { return input; }
