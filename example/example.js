@@ -13,8 +13,8 @@
                 },
                 {
                     name: 'joker.gif',
-                    filesize: '76160',
-                    uploaded: 1393729528
+                    filesize: '76160.3',
+                    uploaded: '1393729528.33'
                 }
              ];
          }]
