@@ -4,6 +4,11 @@
   "main": "src/angular-humanize.js",
   "description": "Angular filter for rendering human-readable data",
   "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "*.md",
+    "package.json"
+  ],
   "dependencies": {
     "angular": "~1.2.7",
     "humanize": "~0.0.9"
