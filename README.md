@@ -31,6 +31,8 @@ to the humanize functions of the same name:
   a human-readable filesize such as "225.35 KB"
 + _humanizeOrdinal_, which transforms an integer into an ordinal such as
   "32nd" or "101st"
++ _humanizeInt_, which transforms an integer into an comma separed value such as
+  "16,354,646,546"
 + _humanizeNaturalDay_, which transforms an integer representing an epoch
   into a date representation or one of "yesterday", "today", or
   "tomorrow"

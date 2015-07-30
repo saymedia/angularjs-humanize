@@ -14,6 +14,12 @@
         return humanize.ordinal(input);
       };
     }).
+    filter('humanizeInt', function () {
+      return function ( input ) {
+        if ( parseInt(input) !== input ) { return input; }
+        return humanize.numberFormat(input, 0);
+      };
+    }).
     filter('humanizeNaturalDay', function () {
       return function ( input ) {
         if ( isNaN(input) ) { return input; }
